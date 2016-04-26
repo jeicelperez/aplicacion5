@@ -1,0 +1,304 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>segunda Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/fecha2.jpg','imagenes/cambio.jpg','imagenes/tema6.jpg','imagenes/temaa4.jpg')">
+<div data-role="page" id="Principal" data-theme="a" >
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c">
+     <h1>El Día de la Tierra</h1>
+   </div>
+   <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:970px;height:115px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+<div>  
+  <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+   <li class="ui-first-child ui-last-child">
+   <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+   <h2>fecha en la que se conmemora</h2>
+   </a>
+</li>
+<li class="ui-first-child ui-last-child">
+   <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Porqué se celebra?</h2>
+   </a>
+</li>
+<li clas="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados del planeta</h2>
+</a>
+  </li>
+ <li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>cuidados del medio ambiente</h2>
+</a>
+</li>
+     <li class="ui-first-child ui-last-child">
+    <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Cambio climatico    </h2>
+    </a>
+   </li>
+   <li class="ui-first-child ui-last-child">
+    <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>reflexion   </h2>
+    </a>
+   </li>
+  </ul>
+  <div data-role="collapsible" data-content-theme="false" >
+         <h1>imagenes de mi localidad</h1>
+          <div>
+        <!-- Start WOWSlider.com -->
+<iframe src="visor/indexdoswow.html" style="width:970px;height:115px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+          <br>
+          </div>
+        </div>
+</div>
+<div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+<div>
+ <h4>Aplicacion cinco</h4>
+ 
+ </div>
+<div>
+   <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+  </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+    <h1>Fecha en la que se conmemora</h1>
+    </div>
+   <div data-role="content" align="center">
+   <div>
+<p> El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson, instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/fecha2.jpg',1)"><img src="imagenes/fecha.jpg" width="299" height="168" id="Image26"></a> </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+  <h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+</div>
+</div>
+</div> 
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>¿Porqué se celebra?</h1>
+ </div>
+<div data-role="content" align="center">
+  <div>
+ 
+<p>El 22 de abril se celebra el Día Mundial de la Tierra. Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.<br>
+
+El impulsor de la protesta fue el senador y activista ambiental Gaylord Nelson, quien convocó a miles de universidades, escuelas primarias y secundarias entre otras comunidades a participar del pedido. Gracias a la expresión social el Ejecutivo estadounidense creó Environmental Protection Agency (Agencia de Protección Ambiental) y varias leyes de protección del medio ambiente.<br>
+
+Dos años después se llevó adelante el encuentro a nivel mundial: Cumbre de la Tierra de Estocolmo.<br>
+
+La intensión es sensibilizar a la humanidad de que es parte del planeta Tierra y sus huellas marcarán el destino del mundo, por eso reducir (el consumo), reciclar y reutilizar objetos es la forma en que cada uno día a día puede colaborar para evitar la contaminación ambiental</p>
+ <img src="imagenes/tema2.jpg" width="250" height="200">
+  <p> biografia<a href="https://es.wikipedia.org/wiki/Gaylord_Nelson"> Gaylond Nelson</a></p>
+ </div>
+<div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+     <h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+     </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+      <h1>Cuidados del planeta</h1>
+  </div>
+<div data-role="content" align="center">
+<div>
+ <h2>Instrucciones Básicas para el Cuidado del Planeta</h2> 
+<p>Una de nuestras más grandes responsabilidades es el cuidado del lugar donde vivimos, donde vivirán nuestros hijos y nietos. Trabajemos por esta oportunidad que tenemos y que además nos hace crecer como individuos.<br>
+
+Estas son algunas instrucciones básicas para el cuidado del planeta que podemos seguir y fomentar día a día:<br>
+<ul>
+<li>No tires ni dejes desechos ni basura en el suelo</li>
+<li>Utiliza el agua responsablemente</li>
+<li>Inicia un huerto en casa</li>
+<li>Desconecta los aparatos eléctricos que no uses</li>
+<li>Separa los residuos sólidos en orgánicos e inorgánicos</li>
+<li>Usa focos ahorradores</li>
+<li>Reduce tu consumo, recicla y reutiliza todo lo que puedas</li>
+<li>Adquiere productos locales</li>
+<li>Fomenta el comercio justo</li>
+<li>Transpórtate en bici.</li>
+</ul>
+</p>  
+ <img src="imagenes/ins.jpg" width="150" height="200"> 
+ <h2>Utilización de la regla de las 3 R</h2>
+ <div data-role="collapsible" data-content-theme="false" >
+        <h1>REDUCIR</h1>
+          <div>
+          <p>Si reducimos el problema, disminuimos el impacto en el medio ambiente. Los problemas de concienciación, habría que solucionarlos empezando por esta erre. La reducción puede realizarse en 2 niveles: reducción del consumo de bienes o de energía. De hecho, actualmente la producción de energía produce numerosos desechos (desechos nucleares, dióxido de carbono...). El objetivo sería:<br>
+<ul>
+<li>Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).</li>
+
+<li>Adaptar los aparatos en función de sus necesidades (por ejemplo poner lavadoras y lavavajillas llenos y no a media carga).</li>
+<li>Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores, etc.</li>
+</ul>
+Ejemplo: reducir la emisión de gases contaminantes, nocivos o tóxicos evitará la intoxicación animal o vegetal del entorno si llega a cotas no nocivas. Países europeos trabajan con una importante política de la reducción, y con el lema: La basura es alimento (para la tierra) producen productos sin contaminantes (100 % biodegradables), para que cuando acabe su vida útil no tenga impacto en el medio, o éste sea lo más reducido posible.</p>
+<img src="imagenes/reducir.jpg" width="200" height="150"><br>
+          </div>
+       
+   </div>
+   <div data-role="collapsible" data-content-theme="false" >
+         <h1>REUTILIZAR</h1>
+          <div>
+          <p>Segunda erre más importante, igualmente debido a que también reduce impacto en el medio ambiente, indirectamente. Ésta se basa en reutilizar un objeto para darle una segunda vida útil. Todos los materiales o bienes pueden tener más de una vida útil, bien sea reparándolos para un mismo uso o con imaginación para un uso diferente.<br>
+
+Ejemplos: Utilizar la otra cara de las hojas impresas, rellenar botellas.<br>
+
+Las botellas desechables se pueden convertir en ladrillos ecológicos, si en su interior se les ponen todas las bolsas de plástico que ya no se usan. Las cajitas o frascos de PVC, metal o plástico se pueden pintar o decorar con técnicas de decoupage y utilizarse nuevamente ahora para guardar distintos elementos. El papel usado se puede transformar en pulpa y crear nuevas hojas para escribir.</p>
+          
+      <img src="imagenes/reutilizar.jpg" width="200" height="150">
+          <br>
+          </div>
+        </div>
+          <div data-role="collapsible" data-content-theme="false" >
+         <h1>RECICLAR</h1>
+          <div>
+          <p>Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables. De esta forma se necesita el empleo en mayor forma personal y energía en el proceso.<br>
+
+Ejemplo: El vidrio y la mayoría de plásticos se pueden reciclar calentándolos hasta que se funden y dándoles una nueva forma. Es como utilizar algo de su principio, aunque la eficiencia no es del cien por cien en general. En el caso del vidrio en concreto, sí es completamente reciclable: de una botella se podría obtener otra botella. </p>
+      
+       <img src="imagenes/reciclar.jpg" width="200" height="150">
+      <br>
+          </div>
+        </div>
+ <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+    </div>
+  </div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+     <h1>cuidados del medio ambiente</h1>
+  </div>
+    <div data-role="content" align="center">
+   <div>
+  
+  
+ <p> El mundo ha sido testigo de las consecuencias ocasionadas por el maltrato del medio ambiente. La aparición de huracanes, la crecida del mar, el recalentamiento global y las lluvias incontrolables, entre otros, son sólo una faceta de las repercusiones que puede acarrear la falta de cuidado de nuestro hábitat. <br>
+
+El mundo está siendo apaleado por el efecto invernadero (recalentamiento global), que no sólo provoca desórdenes ambientales como los ya mencionados sino que también acrecienta la presencia de enfermedades como el dengue, el paludismo y el hanta virus. Los síntomas del planeta tierra son más que obvios, la reducción de los glaciares de la Patagonia y los Andes, las lluvias más prolongadas, los calores intensos en épocas invernales, las sequías, son sólo el principio.<br> 
+
+Se pronostica que al final de este siglo, el calentamiento global ascenderá entre 1.5 y 3 grados, sólo si los países más generadores de “gases de efecto invernadero” reducen la emisión de gases. Además, que todos los países comiencen a regular la eficiencia energética, ahorrar energía, cuidar los bosques, entre muchas otras opciones. Todo esto con el fin de lograr un objetivo que puede sonar trillado “lograr de este, un mundo mejor”.<br> 
+
+Tenemos que proteger el medio ambiente, eso está claro. Sin embargo, muchas veces tomamos la iniciativa, nos lo proponemos, estamos listos para comenzar… pero cuando lo vamos a hacer nos preguntamos ¿y cómo hago paracuidar al medio ambiente? <br>
+
+Tenemos muchas formas de cuidar al medio ambiente, pero hoy comenzaremos por conocer a aquellas que podemos realizar desde casa, cambiando algunos hábitos en nuestros hogares.Por ejemplo, algunos de los hábitos de los que halamos son los que tienen que ver con el momento de realizar las compras y elegir los productos alimenticios.  <br>
+
+•Comprar preferentemente productos con envases de amplia capacidad y reutilizables. <br>
+•Intentar llevar nuestras propias bolsas para la compra. <br>
+•Los alimentos de granel son una gran elección.<br> 
+•Debemos procurar conservar los alimentos en recipientes duraderos, evitando utilizar en exceso el papel de aluminio. <br>
+•Evitar comprar productos con envoltorios superfluos.<br> 
+
+En otro de los momentos que podemos aprovechar para cuidar el medio ambiente es al momento de tirar la basura. <br>
+
+•Separar los materiales de la basura: Utilizar bolsas diferentes para basura orgánica, papel y el cartón, envases de vidrio y envases de brik, plástico y latas. <br>
+•Tirar cada una de esas bolsas en los contenedores dispuestos a cada uno de ellos. <br>
+•No tirar nunca los vasos de cristal y las bombillas con el resto de los vidrios de los embases ya que no pueden reciclarse conjuntamente. <br>
+•Estemos atentos de quitar los tapones y los objetos que tengan en su interior las botellas de vidrio. <br>
+
+Además podemos: <br>
+•Tratar de consumir menos papel, o intentar utilizar más papel reciclable. <br>
+•Enviar a reciclar la máxima cantidad de papel posible. <br>
+•Evitar utilizar, en la medida de lo posible, artículos desechables, ya que la industria de productos de usar y tirar es la que genera más basura en todo el mundo.<br> 
+•Intentar utilizar pilas recargables o pilas verdes no contaminantes en lugar de las comunes.</p> 
+ <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/temaa4.jpg',1)"><img src="imagenes/tema4.jpg" width="258" height="195" id="Image16"></a> </div>
+ </div>
+          <div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+ <h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+   </div>
+  </div>
+ </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>Cambio climatico </h1>
+ </div>
+ <div data-role="content" align="center">
+
+  <p>El cambio climático es un cambio en la distribución estadística de los patrones meteorológicos durante un periodo prolongado de tiempo (décadas a millones de años). Puede referirse a un cambio en las condiciones promedio del tiempo o en la variación temporal meteorológica de las condiciones promedio a largo plazo (más o menos fenómenos meteorológicos extremos). Está causado por factores como procesos bióticos, variaciones en la radiación solar recibida por la Tierra, tectónica de placas y erupciones volcánicas. También se han identificado ciertas actividades humanas como causas significativas del cambio de clima reciente, a menudo llamado calentamiento global.<br>
+
+Los científicos trabajan activamente para entender el clima pasado y futuro mediante observaciones y modelos teóricos. Se ha recopilado un registro climático, que se extiende profundamente en el pasado de la Tierra y continúa construyéndose, basado en la evidencia geológica a partir de perfiles térmicos de perforaciones, núcleos removidos de profundas acumulaciones de hielo, registro de la flora y fauna, procesos glaciares y periglaciares, isótopos estables y otros análisis de las capas de sedimento y registros de los niveles del mar del pasado. El registro instrumental provee de datos más recientes. Los modelos de circulación general, sustentados por las ciencias físicas, se usan a menudo en los enfoques teóricos para corresponder a los datos del clima pasado, realizar proyecciones futuras y asociar las causas y efectos del cambio climático.<br>
+
+Uno de los problemas que nos amenaza hoy en día a todos los seres humanos del Planeta, es el fenómeno del Cambio Climático Global. Las actividades humanas y nuestro sistema económico (y manera de vivir) estamos produciendo más y más gases que están impactando la atmósfera. Esto está causando que la temperatura promedio del planeta suba teniendo consecuencias desastrosas.3 <p>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/cambio.jpg',1)"><img src="imagenes/cambio1.jpg" width="300" height="250" id="Image23"></a> 
+ </div>
+<div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+<h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+  </div>
+ </div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>reflexion </h1>
+ </div>
+ <div data-role="content" align="center">
+<div>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/tema6.jpg',1)"><img src="imagenes/tema3.jpg" width="350" height="300" id="Image15"></a>
+<p> cuida a tu tierra por que sin ella simplemente nosotros no existiriamos por que la Tierra es nuestro hogar,el nos da todo para que los seres humanos podamos tener lo necesario para sobrevivir y no solo lo necesario sino lo muchisimo más que eso,y si acabas con su vida acabas con la tuya</p>
+  </div>
+ </div>
+<div data-role="footer" align="center" data-theme="a"  data-position="fixed">
+ <h4>Aplicacion cinco</h4>
+  <img src="imagenes/mdpii.png" width="46" height="46">
+  <h4>JEICEL PÉREZ ZAPATA</h4>
+  </div>
+  </div>
+</div>
+
+
+</body>
+</html>
